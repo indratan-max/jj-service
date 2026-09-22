@@ -1,0 +1,36 @@
+JJ SERVICE - INSTALASI WINDOWS (SIMPLE + CLOUDFLARE OTOMATIS)
+
+1. Pastikan Node.js sudah terpasang di PC.
+2. Extract ZIP JJ SERVICE ke satu folder.
+3. Untuk pertama kali, klik dua kali:
+   MULAI_JJ_SERVICE.bat
+
+Yang dilakukan otomatis:
+- npm install jika dependency belum ada
+- mengunduh cloudflared.exe resmi Cloudflare jika belum ada
+- menjalankan server JJ SERVICE
+- menunggu server siap
+- membuka Cloudflare Quick Tunnel
+
+Setelah Cloudflare berjalan, akan muncul URL seperti:
+https://xxxxx.trycloudflare.com
+
+URL itulah yang dibuka pelanggan dari HP.
+
+PENTING:
+- PC harus tetap menyala dan terhubung internet.
+- Jangan tutup jendela Cloudflare selama pelanggan membutuhkan akses.
+- Quick Tunnel membuat URL acak yang dapat berubah saat tunnel dijalankan ulang.
+- Untuk alamat tetap seperti servisanda.com, gunakan Named Tunnel/domain Cloudflare.
+- cloudflared Windows tidak otomatis update; lakukan update manual bila diperlukan.
+
+Untuk akses lokal PC:
+http://localhost:3000
+
+Admin:
+/admin.html
+Default:
+username: admin
+password: jjservice
+
+Sebaiknya ubah ADMIN_USER dan ADMIN_PASS sebelum penggunaan nyata.
